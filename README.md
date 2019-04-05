@@ -6,7 +6,7 @@ We can create, edit, delete work whith site scripts associated to a site design,
 
 Only users with Tenant Admin Role are allowed to managed tenant properties. 
 
-###  Site Designs List
+##  Site Designs List
 
 ![site design list](/assets/screen1.jpg)
 
@@ -15,27 +15,34 @@ Only users with Tenant Admin Role are allowed to managed tenant properties.
 ![tenant properties](/assets/screen2.jpg)  
 
 
+
 ![tenant properties](/assets/screen3.jpg)  
+
 
 
 ![tenant properties](/assets/screen3.1.jpg) 
 
 
+
 ![tenant properties](/assets/screen4.jpg)  
 
 
-### Site Designs Rights
+## Site Designs Rights
 
 ![tenant properties](/assets/screen5.jpg)  
+
 
 
 ![tenant properties](/assets/screen6.jpg)  
 
 
+
 ![tenant properties](/assets/screen7.jpg)  
 
 
+
 ![tenant properties](/assets/screen8.jpg)  
+
 
 
 ## Site Design Site Scripts
@@ -43,13 +50,17 @@ Only users with Tenant Admin Role are allowed to managed tenant properties.
 ![tenant properties](/assets/screen9.jpg)  
 
 
+
 ![tenant properties](/assets/screen10.jpg)  
+
 
 
 ![tenant properties](/assets/screen11.jpg)  
 
 
+
 ![tenant properties](/assets/screen12.jpg)  
+
 
 
 ![tenant properties](/assets/screen13.jpg)  
@@ -58,13 +69,17 @@ Only users with Tenant Admin Role are allowed to managed tenant properties.
 
 ## Apply Site Design
 
+
 ![tenant properties](/assets/screen14.jpg)  
+
 
 
 ![tenant properties](/assets/screen15.jpg)  
 
 
+
 ![tenant properties](/assets/screen16.jpg)  
+
 
 
 ![tenant properties](/assets/screen17.jpg)  
