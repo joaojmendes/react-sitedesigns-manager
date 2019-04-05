@@ -296,7 +296,7 @@ export default class spservices {
    * @returns
    * @memberof spservices
    */
-  public async AddSiteDesignTaskToCurrentWeb(webUrl: string, siteDesignId: string) {
+  public async AddSiteDesignTask(webUrl: string, siteDesignId: string) {
     const webAbsoluteUrl = this.context.pageContext.web.absoluteUrl;
 
     try {
@@ -304,9 +304,7 @@ export default class spservices {
         body: `{"siteDesignId":"${siteDesignId}","webUrl":${webUrl}}`
       };
 
-
       const formDigest = await this.getRequestDigest();
-
       const apiUrl = `${webAbsoluteUrl}/_api/microsoft.Sharepoint.Utilities.WebTemplateExtensions.SiteScriptUtility.AddSiteDesignTask`;
 
       const results = await $.ajax({

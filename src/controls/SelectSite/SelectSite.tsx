@@ -12,7 +12,6 @@ import { ISelectSiteState } from './ISelectSiteState';
 import {
   ActionButton,
   Icon,
-
   Spinner,
   SpinnerSize,
   MessageBar,

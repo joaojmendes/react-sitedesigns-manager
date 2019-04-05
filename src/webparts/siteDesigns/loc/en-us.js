@@ -1,6 +1,6 @@
 define([], function() {
   return {
-    SearchBoxPlaceholderText: "Please search for sites to apply ",
+    SearchBoxPlaceholderText: "Please search for sites to apply",
     EditSiteScriptPanelButtonCancel: "Cancel",
     EditSiteScriptSaveButtonLabel: "Save",
     ApplyPanelTitle: "Apply Site Design",
@@ -54,9 +54,9 @@ define([], function() {
     "AddSiteDesignDescriptionLabel": "Site Design Description",
     "AddSiteDesignImageUrlLabel":  "Preview Image Url",
     "AddSiteDesignIsDefaultLabel" : "Is Default ?",
-    "SiteDesignIdLabel" : "Site Design Id",
+    "SiteDesignIdLabel": "Site Design Id",
     "ListViewColumnIdPrincipalNameLabel" : "PrincipalName",
     SiteDesignTitleLabel: "Site Design Title:",
-    WebTemplateLabel : "Web Template"
+    WebTemplateLabel: "Web Template"
   }
 });

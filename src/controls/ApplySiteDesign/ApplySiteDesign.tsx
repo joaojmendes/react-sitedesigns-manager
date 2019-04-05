@@ -77,7 +77,7 @@ export default class ApplySiteDesign extends React.Component<IApplySiteDesignPro
 
         let addSiteDesignTaskResult: IAddSiteDesignTaskToCurrentWebResult = null;
         for (const item of this.selectedWebSites) {
-          addSiteDesignTaskResult = await this.spService.AddSiteDesignTaskToCurrentWeb(item.url,this.props.siteDesignInfo.Id);
+          addSiteDesignTaskResult = await this.spService.AddSiteDesignTask(item.url,this.props.siteDesignInfo.Id);
           this.siteDesignsApplyedInfo.push({addSiteDesignTaskResult: addSiteDesignTaskResult, siteUrl:item.url});
         }
       }

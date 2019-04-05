@@ -66,7 +66,7 @@ export default class SiteDesignRights extends React.Component<ISiteDesignRightsP
   private refreshParent: boolean = false;
   private siteDesignPrincipals: SiteDesignPrincipals[];
 
-  private AddPrincipal = React.lazy(() => import('../AddPrincipal/AddPrincipal' /* webpackChunkName: "testcomponent" */));
+  private AddPrincipal = React.lazy(() => import('../AddPrincipal/AddPrincipal' /* webpackChunkName: "addprincipal" */));
 
   public constructor(props) {
     super(props);
@@ -308,18 +308,18 @@ export default class SiteDesignRights extends React.Component<ISiteDesignRightsP
   public render(): React.ReactElement<ISiteDesignRightsProps> {
     return (
       <div>
-        <Panel isOpen={this.props.showPanel} onDismiss={this.onCancel} type={PanelType.medium} headerText="{strings.SiteDesignRightsPanelTitle}">
+        <Panel isOpen={this.props.showPanel} onDismiss={this.onCancel} type={PanelType.medium} headerText={strings.SiteDesignRightsPanelTitle}>
           <div>
             <span className={styles.label}>{strings.SiteDesignIdLabel}</span>
             <span className={styles.title}>{this.props.SiteDesignSelectedItem.Id}</span>
           </div>
           <div>
-            <span className={styles.label}>{strings}</span>
+            <span className={styles.label}>{strings.SiteDesignRightsPanelTitle}</span>
             <span className={styles.title}>{this.props.SiteDesignSelectedItem.Title}</span>
           </div>
           <div>
             <span className={styles.label}>{strings.WebTemplateLabel}</span>
-            <span className={styles.title}>{this.props.SiteDesignSelectedItem.WebTemplate === '64' ? "{strings.WebTemplateTeamSite}" : "{strings.WebTemplateCommunicationSite}"}</span>
+            <span className={styles.title}>{this.props.SiteDesignSelectedItem.WebTemplate === '64' ? strings.WebTemplateTeamSite : strings.WebTemplateCommunicationSite}</span>
           </div>
           <br />
           {
@@ -396,7 +396,7 @@ export default class SiteDesignRights extends React.Component<ISiteDesignRightsP
 
             dialogContentProps={{
               type: DialogType.normal,
-              title: '{strings.DialogConfirmDeleteTitle}',
+              title: strings.DialogConfirmDeleteTitle,
             }}
             modalProps={{
               isBlocking: true,
@@ -421,8 +421,8 @@ export default class SiteDesignRights extends React.Component<ISiteDesignRightsP
                   <Spinner size={SpinnerSize.small} ariaLive="assertive" />
                 </div>
               }
-              <DefaultButton onClick={this.onDeleteConfirm} text="{strings.ButtonDeleteLabel}" disabled={this.state.disableDeleteButton} />
-              <PrimaryButton onClick={this.onCloseDialog} text="{strings.ButtonCancelLabel}" />
+              <DefaultButton onClick={this.onDeleteConfirm} text={strings.ButtonDeleteLabel} disabled={this.state.disableDeleteButton} />
+              <PrimaryButton onClick={this.onCloseDialog} text={strings.ButtonCancelLabel} />
             </DialogFooter>
           </Dialog>
         </Panel>
