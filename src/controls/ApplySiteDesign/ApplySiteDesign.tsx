@@ -132,7 +132,7 @@ export default class ApplySiteDesign extends React.Component<IApplySiteDesignPro
    * @memberof ApplySiteDesign
    */
   public render(): React.ReactElement<IApplySiteDesignProps> {
-    console.log(this.props.siteDesignInfo);
+
     return (
       <div className={styles.siteDesigns}>
         <Panel isOpen={this.props.showPanel}

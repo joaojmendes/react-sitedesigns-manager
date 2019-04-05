@@ -92,7 +92,7 @@ export default class AddSiteScriptToSiteDesign extends React.Component<IAddSiteS
 
       this.setState({ saving: true, disableSaveButton: true });
       const result = await this.spService.updateSiteDesign(siteDesignUpdateInfo);
-      console.log("return " + result);
+
       this.props.onDismiss(true);
     } catch (error) {
       console.log(error.message);
@@ -212,7 +212,7 @@ export default class AddSiteScriptToSiteDesign extends React.Component<IAddSiteS
    * @memberof AddSiteDesign
    */
   public render(): React.ReactElement<IAddSiteScriptToSiteDesignProps> {
-    console.log(this.props.siteDesignInfo);
+
     return (
       <div className={styles.siteDesigns}>
         <Panel isOpen={this.props.showPanel}

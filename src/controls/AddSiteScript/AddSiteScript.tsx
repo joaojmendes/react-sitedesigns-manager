@@ -99,7 +99,7 @@ export default class AddSiteScript extends React.Component<IAddSiteScriptProps, 
   private setSiteScript(value: ISiteScript) {
 
     this.setState({ currentSiteScript: value });
-    console.log(value);
+
   }
 
   /**
@@ -123,7 +123,7 @@ export default class AddSiteScript extends React.Component<IAddSiteScriptProps, 
       this.siteScriptshowError = true;
       this.setState({ showError: true, errorMessage: strings.JSONSchemaErrorMessage, disableSaveButton: true });
     }
-    console.log(valid);
+
 
   }
   // Validate Value

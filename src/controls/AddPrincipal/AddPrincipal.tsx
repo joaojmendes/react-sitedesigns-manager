@@ -76,7 +76,7 @@ export default class AddPrincipal extends React.Component<IAddPrincipalProps, IA
     try {
       this.setState({ saving: true, disableSaveButton: true });
       const result = await this.spService.grantSiteDesignRights(this.props.siteDesignInfo.Id, principals);
-      console.log("return " + result);
+
       this.props.onDismiss(true);
     } catch (error) {
       console.log(error.message);
@@ -88,7 +88,7 @@ export default class AddPrincipal extends React.Component<IAddPrincipalProps, IA
   private getPeoplePickerItems(items: any[]) {
     this.selectedUsers = items;
     this.setState({ showError:false, errorMessage:'', disableSaveButton: this.selectedUsers.length > 0 ? false : true });
-    console.log(this.selectedUsers);
+
   }
   // Component Did Mount
   /**

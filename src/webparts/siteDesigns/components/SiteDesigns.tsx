@@ -170,20 +170,14 @@ export default class SiteDesigns extends React.Component<ISiteDesignsProps, ISit
           isRunning = !result['@odata.null'] ? true : false;
 
           if (!isRunning) {
-            console.log("stop runnig..");
+
             totalRunningSiteDesigns = totalRunningSiteDesigns - 1;
             siteDesignRunningMessage.push(` site: ${siteDesignApplyed.siteUrl} : Applyed`);
-/*
-            this.setState({
-              siteDesignRunningMessage: siteDesignRunningMessage
-            });*/
+
           } else {
-            console.log("runnig...");
+
             siteDesignRunningMessage.push(`site: ${siteDesignApplyed.siteUrl} : Applying...`);
-            /*
-            this.setState({
-              siteDesignRunningMessage: siteDesignRunningMessage
-            });*/
+
           }
         }
            //

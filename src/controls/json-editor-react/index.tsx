@@ -47,7 +47,7 @@ export default class JsonEditorReact extends React.PureComponent<JsonEditorProps
 
   private  onValidate(json) {
     const vl = this.props.options.ajv.compile(schema);
-    console.log('teste:' + vl(json));
+
     if (vl(json) && json.actions && json.actions.length > 0 && json['$schema'] && json.bindata && json.version){
       this.props.onValidate(true);
     }else{

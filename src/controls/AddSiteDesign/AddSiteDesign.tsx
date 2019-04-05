@@ -83,7 +83,7 @@ export default class AddSiteDesign extends React.Component<IAddSiteDesignProps, 
    */
   private async onSave(ev: React.MouseEvent<HTMLButtonElement>) {
     ev.preventDefault();
-    console.log(this.state.selectedItemWebTemplate);
+
     const _siteDesignCreationInfo: SiteDesignCreationInfo = this.state.siteDesignCreationInfo;
     // read SiteScripts
     for (const item of this.state.selectedItems) {
@@ -92,7 +92,7 @@ export default class AddSiteDesign extends React.Component<IAddSiteDesignProps, 
     try {
       this.setState({ saving: true, disableSaveButton: true });
       const result = await this.spService.createSiteDesign(_siteDesignCreationInfo);
-      console.log("return " + result);
+
       this.props.onDismiss(true);
     } catch (error) {
       console.log(error.message);

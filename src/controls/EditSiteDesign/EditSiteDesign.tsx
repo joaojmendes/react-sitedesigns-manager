@@ -80,7 +80,7 @@ export default class EditSiteDesign extends React.Component<IEditSiteDesignProps
     try {
       this.setState({ saving: true, disableSaveButton: true });
       const result = await this.spService.updateSiteDesign(siteDesignUpdateInfo);
-      console.log("return " + result);
+
       this.props.onDismiss(true);
     } catch (error) {
       console.log(error.message);
