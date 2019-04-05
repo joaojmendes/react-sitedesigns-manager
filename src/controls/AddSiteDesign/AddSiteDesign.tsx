@@ -96,7 +96,7 @@ export default class AddSiteDesign extends React.Component<IAddSiteDesignProps, 
       this.props.onDismiss(true);
     } catch (error) {
       console.log(error.message);
-      this.setState({ saving: false, disableSaveButton: true, showError: true, errorMessage: "Error on create SiteDesign, see console log for details." });
+      this.setState({ saving: false, disableSaveButton: true, showError: true, errorMessage: error.message });
     }
 
   }
@@ -215,7 +215,7 @@ export default class AddSiteDesign extends React.Component<IAddSiteDesignProps, 
     } else {
       _siteDesignCreationInfo.Title = value;
       this.setState({ errorMessage: '', disableSaveButton: true, siteDesignCreationInfo: _siteDesignCreationInfo });
-      returnvalue = "SiteDesign tile is required";
+      returnvalue = strings.AddSiteDesignPanelTitleErrorMessage;
     }
     return returnvalue;
   }
@@ -345,14 +345,14 @@ export default class AddSiteDesign extends React.Component<IAddSiteDesignProps, 
               title={"Add Site Script"}
               onClick={this.onAddScript}
             >
-              Add SiteScript
+             {strings.AddSiteDesignPanelActionButtonText}
           </ActionButton>
           </div>
           <div>
-            <p> SiteScripts will run in the order they are selected </p>
+            <p> {strings.AddSiteDesignPanelScriptOrderInfo} </p>
             <Dropdown
-              placeholder="Select Site Script"
-              label="Site Scripts"
+              placeholder={strings.AddSiteDesignPanelDropDownPlaceholderText}
+              label={strings.AddSiteDesignPanelDropDownLabel}
               selectedKeys={this.state.selectedItems}
               onChange={this.onChangeMultiSelect}
               multiSelect
@@ -374,8 +374,8 @@ export default class AddSiteDesign extends React.Component<IAddSiteDesignProps, 
                 <Spinner size={SpinnerSize.small} ariaLive="assertive" />
               </div>
             }
-            <PrimaryButton onClick={this.onSave} text="Save" disabled={this.state.disableSaveButton} />
-            <DefaultButton onClick={this.onCancel} text="Cancel" />
+            <PrimaryButton onClick={this.onSave} text={strings.AddSiteDesignPanelButtonSaveText} disabled={this.state.disableSaveButton} />
+            <DefaultButton onClick={this.onCancel} text={strings.AddSiteDesignPanelButtonCancelText} />
           </DialogFooter>
           {
             this.state.showError &&

@@ -227,8 +227,8 @@ export default class AddSiteScript extends React.Component<IAddSiteScriptProps, 
                   <Spinner size={SpinnerSize.small} ariaLive="assertive" />
                 </div>
               }
-              <PrimaryButton onClick={this.onSave} text="Save" disabled={this.state.disableSaveButton} />
-              <DefaultButton onClick={this.onCancel} text="Cancel" />
+              <PrimaryButton onClick={this.onSave} text={strings.AddSiteScriptPanelButtonSave} disabled={this.state.disableSaveButton} />
+              <DefaultButton onClick={this.onCancel} text={strings.AddSiteScriptPanelButtonCancelText} />
             </DialogFooter>
           </Dialog>
 

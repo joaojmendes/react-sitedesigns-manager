@@ -136,7 +136,7 @@ export default class EditSiteScript extends React.Component<IEditSiteScriptProps
       }
     } else {
       this.siteScriptShowError = true;
-      this.setState({ showError: true, errorMessage: 'JSON Schema has errors or not valid', disableSaveButton: true });
+      this.setState({ showError: true, errorMessage: strings.JSONSchemaNotValidMessage, disableSaveButton: true });
     }
   }
   // Validate Value

@@ -450,14 +450,14 @@ export default class SiteScripts extends React.Component<ISiteScriptsProps, ISit
 
             dialogContentProps={{
               type: DialogType.normal,
-              title: 'Delete Site Scripts?',
+              title: strings.DeleteSiteScriptDialogConfirmTitle,
             }}
             modalProps={{
               isBlocking: true,
 
             }}
           >
-            <p>Please confirm delete of Site Scripts </p>
+            <p>{strings.DeleteSiteScriptDialogConfirmText}</p>
             <br />
             {
               this.state.showError &&
@@ -475,8 +475,8 @@ export default class SiteScripts extends React.Component<ISiteScriptsProps, ISit
                   <Spinner size={SpinnerSize.small} ariaLive="assertive" />
                 </div>
               }
-              <DefaultButton onClick={this.onDeleteConfirm} text="Delete" disabled={this.state.disableDeleteButton} />
-              <PrimaryButton onClick={this.onCloseDialog} text="Cancel" />
+              <DefaultButton onClick={this.onDeleteConfirm} text={strings.ButtonDeleteLabel} disabled={this.state.disableDeleteButton} />
+              <PrimaryButton onClick={this.onCloseDialog} text={strings.ButtonCancelLabel} />
             </DialogFooter>
           </Dialog>
         </Panel>

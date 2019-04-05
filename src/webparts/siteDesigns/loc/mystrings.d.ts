@@ -1,4 +1,25 @@
 declare interface ISiteDesignsWebPartStrings {
+  DeleteSiteScriptDialogConfirmText: string;
+  DeleteSiteScriptDialogConfirmTitle: string;
+  JSONSchemaNotValidMessage: string;
+  EditSiteDesignPanelButtonCancelText: string;
+  EditSiteDesignPanelButtonSaveText: string;
+  DeleteSiteDesignPanelTitle: string;
+  DeleteSiteDesignPanelButtonCanceltext: string;
+  DeleteSiteDesignPanelButtonDeleteText: string;
+  AddSiteScriptToSiteDesignPanelButtonCancelText: string;
+  AddSiteScriptToSiteDesignPanelButtonSaveText: string;
+  AddSiteScriptPanelButtonCancelText: string;
+  AddSiteScriptPanelButtonSave: string;
+  AddPrincipalPanelButtonCancelText: string;
+  AddPrincipalPanelButtonSaveText: string;
+  AddSiteDesignPanelDropDownLabel: string;
+  AddSiteDesignPanelDropDownPlaceholderText: string;
+  AddSiteDesignPanelButtonCancelText: string;
+  AddSiteDesignPanelButtonSaveText: string;
+  AddSiteDesignPanelScriptOrderInfo: string;
+  AddSiteDesignPanelActionButtonText: string;
+  AddSiteDesignPanelTitleErrorMessage: string;
   SearchBoxPlaceholderText: string;
   EditSiteScriptPanelButtonCancel: string;
   EditSiteScriptSaveButtonLabel: string;

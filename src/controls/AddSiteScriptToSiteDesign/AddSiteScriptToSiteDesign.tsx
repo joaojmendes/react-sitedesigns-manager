@@ -291,8 +291,8 @@ export default class AddSiteScriptToSiteDesign extends React.Component<IAddSiteS
                 <Spinner size={SpinnerSize.small} ariaLive="assertive" />
               </div>
             }
-            <PrimaryButton onClick={this.onSave} text="Save" disabled={this.state.disableSaveButton} />
-            <DefaultButton onClick={this.onCancel} text="Cancel" />
+            <PrimaryButton onClick={this.onSave} text={strings.AddSiteScriptToSiteDesignPanelButtonSaveText} disabled={this.state.disableSaveButton} />
+            <DefaultButton onClick={this.onCancel} text={strings.AddSiteScriptToSiteDesignPanelButtonCancelText} />
           </DialogFooter>
           {
             this.state.showError &&

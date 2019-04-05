@@ -162,8 +162,8 @@ export default class AddPrincipal extends React.Component<IAddPrincipalProps, IA
                 <Spinner size={SpinnerSize.small} ariaLive="assertive" />
               </div>
             }
-            <PrimaryButton onClick={this.onSave} text="Save" disabled={this.state.disableSaveButton} />
-            <DefaultButton onClick={this.onCancel} text="Cancel" />
+            <PrimaryButton onClick={this.onSave} text={strings.AddPrincipalPanelButtonSaveText} disabled={this.state.disableSaveButton} />
+            <DefaultButton onClick={this.onCancel} text={strings.AddPrincipalPanelButtonCancelText} />
           </DialogFooter>
           {
             this.state.showError &&

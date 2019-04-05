@@ -262,8 +262,8 @@ export default class EditSiteDesign extends React.Component<IEditSiteDesignProps
                 <Spinner size={SpinnerSize.small} ariaLive="assertive" />
               </div>
             }
-            <PrimaryButton onClick={this.onSave} text="Save" disabled={this.state.disableSaveButton} />
-            <DefaultButton onClick={this.onCancel} text="Cancel" />
+            <PrimaryButton onClick={this.onSave} text={strings.EditSiteDesignPanelButtonSaveText} disabled={this.state.disableSaveButton} />
+            <DefaultButton onClick={this.onCancel} text={strings.EditSiteDesignPanelButtonCancelText} />
           </DialogFooter>
           {
             this.state.showError &&

@@ -101,7 +101,7 @@ export default class DeleteSiteDesign extends React.Component<IDeleteSiteDesignP
         <Panel isOpen={this.props.showPanel}
           onDismiss={this.onCancel}
           type={PanelType.medium}
-          headerText="Delete Site Design">
+          headerText={strings.DeleteSiteDesignPanelTitle}>
            <TextField
             label={strings.SiteDesignIdLabel}
             readOnly={this.state.readOnly}
@@ -163,8 +163,8 @@ export default class DeleteSiteDesign extends React.Component<IDeleteSiteDesignP
                 <Spinner size={SpinnerSize.small} ariaLive="assertive" />
               </div>
             }
-            <PrimaryButton onClick={this.onDelete} text="Delete" disabled={this.state.disableDeleteButton} />
-            <DefaultButton onClick={this.onCancel} text="Cancel" />
+            <PrimaryButton onClick={this.onDelete} text={strings.DeleteSiteDesignPanelButtonDeleteText} disabled={this.state.disableDeleteButton} />
+            <DefaultButton onClick={this.onCancel} text={strings.DeleteSiteDesignPanelButtonCanceltext} />
           </DialogFooter>
           {
             this.state.showError &&
